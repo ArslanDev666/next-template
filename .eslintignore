@@ -1,0 +1,6 @@
+/.git
+/.vscode
+node_modules
+next.config.js
+*.d.ts
+.github

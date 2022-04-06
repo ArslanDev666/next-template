@@ -1,0 +1,51 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["simple-import-sort", "import"],
+  "rules": {
+    "quotes": ["error", "single"],
+    "semi": "off",
+    "@typescript-eslint/semi": ["off"],
+    "@typescript-eslint/no-empty-interface": [
+      "error",
+      {
+        "allowSingleExtends": true
+      }
+    ],
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          ["^react", "^@?\\w"],
+          ["^~@layouts(/.*|$)"],
+          ["^~@templates(/.*|$)"],
+          ["^~@modules(/.*|$)"],
+          ["^~@includes(/.*|$)"],
+          ["^~@components(/.*|$)"],
+          ["^~@libs(/.*|$)"],
+          ["^~@context(/.*|$)"],
+          ["^~@store(/.*|$)"],
+          ["^~@utils(/.*|$)"],
+          ["^~@constants(/.*|$)"],
+          ["^~@services(/.*|$)"],
+          ["^~@ts(/.*|$)"],
+          ["^~@styles(/.*|$)"],
+          ["^.+\\.s?css$"],
+          ["^~@assets(/.*|$)"],
+          ["^\\u0000"],
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"]
+        ]
+      }
+    ],
+    "simple-import-sort/exports": "error"
+  },
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ]
+}

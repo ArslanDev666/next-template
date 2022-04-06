@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "~@components/*": ["src/components/*"],
+      "~@modules/*": ["src/modules/*"],
+      "~@includes/*": ["src/includes/*"],
+      "~@assets/*": ["public/assets/*"],
+      "~@hooks/*": ["src/hooks/*"],
+      "~@pages/*": ["pages/*"],
+      "~@context/*": ["src/context/*"],
+      "~@services/*": ["src/services/*"],
+      "~@ts/*": ["src/ts/*"],
+      "~@utils/*": ["src/utils/*"],
+      "~@styles/*": ["src/styles/*"],
+      "~@store/*": ["src/store/*"],
+      "~@libs/*": ["src/libs/*"],
+      "~@constants/*": ["src/constants/*"],
+      "~@layouts/*": ["src/layouts/*"],
+      "~@/*": ["/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "src/ts/images.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
